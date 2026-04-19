@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Room</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .password-wrapper {
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .password-wrapper h1 {
+            color: rgb(0, 0, 0);
+            font-family: 'script';
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 10px;
+            margin-bottom: 20px;
+        }
+
+        .password-wrapper input[type="text"] {
+            width: 240px;
+            padding: 4px 8px;
+            font-size: 16px;
+            font-family: 'script';
+            letter-spacing: 4px;
+            text-align: center;
+            border: 1px solid rgb(0, 0, 0);
+            background: transparent;
+            outline: none;
+        }
+
+        .password-wrapper input[type="text"]:focus {
+            border-color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <img class="img-letra" src="imagenes/calendario oculto.jpg.png" alt="imagen con informacion de ayi">
+    <p class="subtitle">"Prueba las diferentes combinaciones con lo que has averiguado de las pistas"</p>
+
+    <div class="password-wrapper">
+        <p style="font-size: 20px;">Contraseña:</p>
+        <input type="text" id="passwordInput" maxlength="20" placeholder="- - - -" />
+    </div>
+
+    <a class="back" href="index.html">Volver</a>
+
+    <script>
+        const correctPassword = "342E"; // cotraseña de acceso
+
+        document.getElementById("passwordInput").addEventListener("keydown", function (e) {
+            if (e.key === "Enter") {
+                if (this.value === correctPassword) {
+                    window.location.href = "exito.html";
+                } else {
+                    this.value = "";
+                    this.style.borderColor = "red";
+                    alert("Contraseña incorrecta");
+                    setTimeout(() => { this.style.borderColor = "rgb(0,0,0)"; }, 800);
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

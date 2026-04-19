@@ -1,0 +1,116 @@
+/* Estilos para el index */
+
+.title {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    font-family: 'script';
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+/* Estilo global para volver */
+.back {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/* Estilos para la letra 1 == E */
+
+.subtitle {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    font-family: 'script';
+    font-size: 20px;
+    /* font-weight: bold; */
+    letter-spacing: 3px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Estilos para la pista 2 == F */
+
+.img-letra {
+    position: absolute;
+    margin-top: 20px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+}
+
+
+/* Estilos para la pista pantalla txt */
+
+.txt {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    font-family: 'script';
+    font-size: 30px;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*ETILO PARA ,ENSAJE DE EXITO*/
+
+.exito {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    font-family: 'script';
+    font-size: 30px;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.jugar {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'script';
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    background: transparent;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px 28px;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.jugar:hover {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
